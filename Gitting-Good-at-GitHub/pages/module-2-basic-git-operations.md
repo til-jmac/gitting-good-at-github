@@ -42,7 +42,11 @@ git clone {repository link}
 
 # **Ignoring Files (Activity)**
 
-TODO: Ignoring files example
+1. Create a directory `new_folder`
+2. Create a file `new_file.txt` in the `new_folder` directory.
+3. Add `new_folder/` to the `.gitignore` file in the root project.
+4. To the root project, add a file called `new_file.csv`
+5. Add `*.csv` to the `.gitignore` file.
 
 ---
 
@@ -86,8 +90,6 @@ TODO: Ignoring files example
 # **Undoing Changes**
 <div class="text-2xl">
 
-* `git commit --amend` allows you to change the last commit
-  * Update git commit message
 * `git reset HEAD~1`
   * This simply undoes the last commit with files intact
 * `git checkout origin/main path/to/filename`
@@ -98,7 +100,14 @@ TODO: Ignoring files example
 
 # **Undoing Changes (Activity)**
 
-TODO: Activity
+1. To undo your last commit, run `git reset HEAD~1`
+
+<div class="text-3xl">
+You can explore other ways of changing history, but suggest using GitHub Desktop.
+
+* git commit --amend
+* git revert
+</div>
 
 ---
 
@@ -107,7 +116,7 @@ TODO: Activity
 
 * In the event a file gets added that you want to remove, you can use the\
 `git rm` command:
-* If you want to completely remove the file, you can do: 
+* If you want to completely remove the file, you can do:
   * `git rm path/to/file`
 * If you want to just stop tracking it in source control you can do:
   * `git rm --cached path/to/filename`
@@ -121,4 +130,19 @@ TODO: Activity
 
 # **Removing Files (Activity)**
 
-TODO: Ignore and remove activity
+1. Remove `new_folder` from `.gitignore`
+2. Stage the `new_folder/new_file.txt` file.
+3. Commit the `new_folder/new_file.txt` file.
+4. Remove the whole folder `git rm -r new_folder/`
+5. Commit the removal `git commit -m"Remove new_folder"`
+
+---
+
+# **Removing Files (Activity Part 2)**
+
+1. Add a `.secrets` folder to the project.
+2. Add a `.env` file to the `.secrets` directory.
+3. Add and commit the `.env` file.
+4. Add `.secrets/` to the `.gitignore` file.
+5. Remove the `.env` file from git cache
+   1. `git rm --cache .secrets/.env`
