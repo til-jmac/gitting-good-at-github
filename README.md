@@ -2,6 +2,8 @@
 
 Gitting Good at GitHub is an interactive approach to learning how to collaborate in a team environment using Git and GitHub.
 
+You can see the slides at [Gitting-Good-at-GitHub.pdf](Gitting-Good-at-GitHub.pdf)
+
 ## Setup
 
 This course assumes that participants have a GitHub Account, have git, GitHub, and VS Code installed.
