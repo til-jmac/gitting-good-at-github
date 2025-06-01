@@ -53,7 +53,8 @@ git clone {repository link}
 # **Staging and Committing Changes**
 <div class="text-2xl">
 
-* You can either add all files with `git add -A` or `git add path/to/filename`
+* You can either add all files with `git add -A` or\
+   `git add path/to/filename`
   * Tools like GitHub Desktop and VS Code's Source Control Panel are helpful to see all files
 * Once a file is staged, you can then `commit` the changes with
   * `git commit -m"{insert message here}"`
