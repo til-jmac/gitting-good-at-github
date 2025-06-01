@@ -25,11 +25,14 @@
 ---
 
 # **What is Git?**
+<div class="text-2xl">
 
 * Git is a distributed version control system used to track changes.
+  * There are centralized frameworks such as Team Foundation Server (Microsoft) and Subversion (SVN) (Apache)
 * Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub).
 * Each change is saved as a snapshot, not just differences.
 * Enables offline work and syncing changes when you're ready.
+</div>
 
 ---
 
@@ -50,8 +53,8 @@
 
 * An online platform to store, manage, and track changes to code using Git.
 * A **communication** platform.
-* Has features like GitHub Actions for running and deploying code.
-* Supports blogs via GitHub Pages
+* **GitHub Actions.** for running and deploying code.
+* **GitHub Pages.** for blogs. 
 * Productivity tools like Issue tracking, project management, and a wiki.
 
 ---
